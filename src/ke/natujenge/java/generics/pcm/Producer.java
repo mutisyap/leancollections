@@ -3,15 +3,15 @@ package ke.natujenge.java.generics.pcm;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class Producer<T> {
-    private Queue<T> queue;
+public class Producer<J> {
+    private Queue<J> queue;
 
-    public Producer(Queue<T> queue) {
+    public Producer(Queue<J> queue) {
         this.queue = queue;
     }
 
-    public void addToQueue(T t){
-        this.queue.add(t);
-        System.out.println("Added "+ t + " to queue");
+    public void addToQueue(J j){
+        this.queue.add(j);
+        System.out.println("Added "+ j + " to queue");
     }
 }
